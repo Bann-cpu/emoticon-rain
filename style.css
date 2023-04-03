@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100dvh;
+    width: 100dvw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    overflow: hidden;
+    font-family: 'Playfair Display', serif;
+}
+
+.heart {
+    position: absolute;
+    top: -50px;
+    animation: fallingEmoticon 7s linear;
+    font-size: 2rem;
+}
+
+@keyframes fallingEmoticon {
+    0%{
+        transform: translateY(-50px);
+    }
+    100%{
+        transform: translateY(105dvh);
+    }
+}
+
+h1{
+    color: white;
+}
